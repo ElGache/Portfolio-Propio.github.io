@@ -1,0 +1,543 @@
+:root{
+    --negrito-ojos-claros: rgb(0, 0, 0);
+    --blanquito: rgb(255, 255, 255);
+    --grisillo: rgb(100, 100, 100);
+}
+
+html{
+    box-sizing: inherit;
+    background-color: var(--negrito-ojos-claros);
+    color: var(--blanquito);
+    font-family: "Antonio", sans-serif;
+    
+}
+html h5{
+    font-size: 15px;
+    opacity: 70%
+}
+html a{
+    
+    color: var(--blanquito);
+    text-decoration: none;
+}
+/*GLOBAL PARA LOS TEXTITOS*/
+.textitos{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+/*PRIMERAS PALABRAS DE ARRIBA*/
+header{
+    display: flex;
+    flex-direction: row;
+    align-items:self-start;
+    justify-content: space-between;
+}
+
+.headers{
+    text-align: END;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 20rem;
+}
+
+.headers h5{
+    text-align: END;
+}
+
+.contacto a{
+    margin-right: 6rem;
+}
+
+.contacto{
+    margin-top: 2rem;
+}
+
+
+/*NAV-BAR*/
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+    position: sticky;
+    top: 50px;
+}
+.nav-bar a{
+    opacity: 100%;
+}
+.navegacion-principal2{
+    display: none;
+}
+
+/*BAJO EL HEADER*/
+
+.dev-text h1{
+    font-size: 100px;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/*IMAGEN*/
+
+.imgtopp{
+    margin-top: 0;
+    width: 100%;
+    height: 20rem;
+}
+
+/*BAJO IMAGEN*/
+
+.underimage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*ENCIMA PROYECTOS*/
+
+.aboveproyects p{
+    font-size: 30px;
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.services p{
+    opacity: 70%;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+}
+.red2,.red3{
+    margin-top: 3rem;
+}
+.red1 svg{
+    margin-left: 3rem;
+}
+.red2 svg{
+    margin-left: 3.4rem;
+}
+.red3 svg{
+    margin-left: 5.3rem;
+}
+
+.redes a{
+    margin-top: 1rem;
+    
+}
+
+/*PROYECTOS*/
+
+.proyectos{
+    border-top-style: groove;
+    margin-top: 12rem;
+    padding-top: 6rem;
+    /* border-bottom-style:groove ; */
+}
+
+.titproyecto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.proyectos-flex1, .proyectos-flex2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.underphoto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.underphoto a{
+    margin-left: 3rem;
+    
+}
+
+/*DESTREZAS*/
+
+.destrezas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-style:groove;
+    padding-bottom: 6rem;
+    margin-bottom: 12rem;
+}
+
+.cursos{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.curso{
+    border-top-style: groove;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.curso-top{
+    border-top-style: none;
+}
+
+.curso a{
+    margin-top: 1.6rem;
+}
+
+.destreza-top{
+    border-top-style: groove;
+    margin-top: 10rem;
+    padding-bottom: 0;
+    padding-top: 6rem;
+}
+
+/*CONTACTO*/
+
+.form-contacto{
+    height: 750px;
+    margin-bottom: 30px;
+    /* width: 100%; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-text, .boton, textarea{
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    line-height: 75px;
+    color: var(--blanquito);
+}
+  
+.boton{
+    text-decoration: none;
+}
+  
+.campo{
+    border-bottom-style:groove;
+    width: 90%;
+}
+  
+.contenedor-campos{
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.hamburguer{
+    display: none;
+}
+
+@media (max-width: 810px){
+    .textitos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .proyectos-flex1, .proyectos-flex2, .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .dev-text h1{
+        font-size: 5rem;
+    }
+    .parrafo, .aboveproyects p{
+        font-size: 15px;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .navegacion-principal2{
+        display: flex;
+    }
+    .bar{
+        display: block;
+        width: 40px;
+        height: 6px;
+        margin: 10px auto;
+        -webkit-transition: all 0.3 ease-in-out;
+        transition: all 0.3 ease-in-out;
+        background-color: var(--blanquito);
+    }
+    
+    .icono{
+        position: absolute;
+        right: 0;
+        /* top: 0; */
+        bottom: 53rem;
+        margin-top: 5.1rem;
+        margin-right: 1rem;
+    }
+    .icono.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .icono.active .bar:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+    }
+    .icono.active .bar:nth-child(3){
+        transform: translateY(-23px) rotate(-45deg);
+    }
+    .enlaces{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .menu{
+        position: absolute;
+        z-index: 1;
+        right: -1000px;
+        top: 98px;
+        flex-direction: column;
+        text-align: center;
+        transition: 0.3s;
+        width: 100%;
+        height: 452px;
+    }
+    .nav-item{
+        margin: 16px 0;
+        
+    }
+    .nav-item a {
+        display: block;
+        text-align: center;
+        color: var(--blanco);
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 700;
+        background-color: var(--blanquito);
+    }
+    
+    .menu.active{
+        right: 0;
+    }
+    .menu a{
+        padding-top: 3rem;
+        
+    }
+    
+    
+    li{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .titulo{
+        display: block;
+        
+    }
+
+    .textitos{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <div class="cursos">
+            <div class="curso">
+                <h5>
+
+                </h5>
+                <h5>
+                    
+                </h5>
+            </div>
+            <div class="curso">
+                <h5>
+
+                </h5>
+                <h5>
+                    
+                </h5>
+            </div>
+            <div class="curso">
+                <h5>
+
+                </h5>
+                <h5>
+                    
+                </h5>
+            </div>
+            <div class="curso">
+                <h5>
+
+                </h5>
+                <h5>
+                    
+                </h5>
+            </div>
+        </div> */
