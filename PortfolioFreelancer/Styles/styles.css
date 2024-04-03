@@ -6,7 +6,7 @@
 
 html{
     box-sizing: inherit;
-    background-color: var(--negrito-ojos-claros);
+    /* background-color: var(--negrito-ojos-claros); */
     color: var(--blanquito);
     font-family: "Antonio", sans-serif;
     

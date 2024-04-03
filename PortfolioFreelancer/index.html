@@ -165,39 +165,50 @@
                 </h5>
             </div>
         </div>
-        <div class="proyectos-flex1">
-            <div class="proyecto">
-                <img src="./IMG/image copy 2.png" alt="">
-                <div class="underphoto">
-                    <h5>·DICTIONARY WEB APP</h5>
-                    <a href="https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL">VER</a>
+        <div>
+            <script>
+                fetch('./json/proyectos.json')
+                .then(response => response.json)
+                .then(data => {
+                    for(let i = 0; i < data.length; i++){
+                        data[i].img + data[i].titulo + data[i].enlace
+                    }
+                })
+            </script>
+            <!-- <div class="proyectos-flex1">
+                <div class="proyecto">
+                    <img src="./IMG/image copy 2.png" alt="">
+                    <div class="underphoto">
+                        <h5>·DICTIONARY WEB APP</h5>
+                        <a href="https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL">VER</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./IMG/image copy 3.png" alt="">
+                    <div class="underphoto">
+                        <h5>·PASSWORD GENERATOR APP</h5>
+                        <a href="https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh">VER</a>
+                    </div>
                 </div>
             </div>
-            <div class="proyecto">
-                <img src="./IMG/image copy 3.png" alt="">
-                <div class="underphoto">
-                    <h5>·PASSWORD GENERATOR APP</h5>
-                    <a href="https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh">VER</a>
+            <div class="proyectos-flex2">
+                <div class="proyecto">
+                    <img src="./IMG/image copy.png" alt="">
+                    <div class="underphoto">
+                        <h5>·ADAM KEYES PORTFOLIO</h5>
+                        <a href="https://www.frontendmentor.io/challenges/singlepage-developer-portfolio-bBVj2ZPi-x">VER</a>
+                    </div>
                 </div>
-            </div>
+                <div class="proyecto">
+                    <img src="./IMG/image.png" alt="">
+                    <div class="underphoto">
+                        <h5>·SOCIAL LINK-TREE PROFILE</h5>
+                        <a href="https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ">VER</a>
+                    </div>
+                </div>
+            </div> -->
         </div>
-        <div class="proyectos-flex2">
-            <div class="proyecto">
-                <img src="./IMG/image copy.png" alt="">
-                <div class="underphoto">
-                    <h5>·ADAM KEYES PORTFOLIO</h5>
-                    <a href="https://www.frontendmentor.io/challenges/singlepage-developer-portfolio-bBVj2ZPi-x">VER</a>
-                </div>
-            </div>
-            <div class="proyecto">
-                <img src="./IMG/image.png" alt="">
-                <div class="underphoto">
-                    <h5>·SOCIAL LINK-TREE PROFILE</h5>
-                    <a href="https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ">VER</a>
-                </div>
-            </div>
-        </div>
-        <div class="textitos destreza-top">
+            <div class="textitos destreza-top">
             <div>
                 <h5>
                     #03
