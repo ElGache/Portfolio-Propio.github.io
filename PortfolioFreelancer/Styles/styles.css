@@ -6,7 +6,7 @@
 
 html{
     box-sizing: inherit;
-    /* background-color: var(--negrito-ojos-claros); */
+    background-color: var(--negrito-ojos-claros);
     color: var(--blanquito);
     font-family: "Antonio", sans-serif;
     
@@ -104,6 +104,7 @@ header{
 }
 
 .services{
+    margin-top: 5rem;
     display: flex;
     flex-direction: row;
     justify-content:space-around;
@@ -117,29 +118,33 @@ header{
     display: flex;
     flex-direction: column;
 }
-.red2,.red3{
-    margin-top: 3rem;
-}
-.red1 svg{
-    margin-left: 3rem;
-}
-.red2 svg{
-    margin-left: 3.4rem;
-}
-.red3 svg{
-    margin-left: 5.3rem;
+
+.redes h3{
+    margin-bottom: 0;
 }
 
-.redes a{
+.rrss{
     margin-top: 1rem;
-    
 }
+
+.red1 {
+    margin-left: 3rem;
+}
+
+.red2 {
+    margin-left: 5.4rem;
+}
+
+.red3 {
+    margin-left: 3.4rem;
+}
+
 
 /*PROYECTOS*/
 
 .proyectos{
     border-top-style: groove;
-    margin-top: 12rem;
+    margin-top: 6rem;
     padding-top: 6rem;
     /* border-bottom-style:groove ; */
 }
@@ -177,7 +182,7 @@ header{
     align-items: center;
     border-bottom-style:groove;
     padding-bottom: 6rem;
-    margin-bottom: 12rem;
+    margin-bottom: 6rem;
 }
 
 .cursos{
@@ -203,7 +208,7 @@ header{
 
 .destreza-top{
     border-top-style: groove;
-    margin-top: 10rem;
+    margin-top: 6rem;
     padding-bottom: 0;
     padding-top: 6rem;
 }
@@ -250,40 +255,90 @@ header{
     justify-content: space-around;
 }
 
+.iconos svg{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/* .iconos a{
+    width: 6rem;
+} */
+
 .hamburguer{
     display: none;
 }
 
+/*ESPACIO FORMULARIOS+JS*/
+
+.botones-formularios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.quieroAyuda-h2.desactives{
+    opacity: 50%;
+}
+
+.quieroAyuda-h2.actives{
+    opacity: 100%;
+}
+
+.contacto-h2{
+    opacity: 50%;
+}
+
+.contacto-h2.actives{
+    opacity: 100%;
+}
+
+.contactoForm.desactives{
+    display: none;
+}
+
+.quieroAyudaForm.desactives{
+    display: none;
+}
+
 @media (max-width: 810px){
+
     .textitos{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .proyectos-flex1, .proyectos-flex2, .services{
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
+
     .redes{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
     }
+
     .dev-text h1{
         font-size: 5rem;
     }
+
     .parrafo, .aboveproyects p{
         font-size: 15px;
     }
+
     .nav-bar{
         display: none;
     }
+
     .navegacion-principal2{
         display: flex;
     }
+
     .bar{
         display: block;
         width: 40px;
@@ -302,20 +357,23 @@ header{
         margin-top: 5.1rem;
         margin-right: 1rem;
     }
+
     .icono.active .bar:nth-child(2){
         opacity: 0;
     }
+
     .icono.active .bar:nth-child(1){
         transform: translateY(10px) rotate(45deg);
     }
+
     .icono.active .bar:nth-child(3){
         transform: translateY(-23px) rotate(-45deg);
     }
+
     .enlaces{
         display: flex;
         flex-direction: column;
     }
-    
     
     .menu{
         position: absolute;
@@ -328,10 +386,12 @@ header{
         width: 100%;
         height: 452px;
     }
+
     .nav-item{
         margin: 16px 0;
         
     }
+
     .nav-item a {
         display: block;
         text-align: center;
@@ -345,18 +405,20 @@ header{
     .menu.active{
         right: 0;
     }
+
     .menu a{
         padding-top: 3rem;
         
     }
-    
-    
+        
     li{
         list-style-type: none;
     }
+
     a{
         text-decoration: none;
     }
+
     .titulo{
         display: block;
         
@@ -365,7 +427,15 @@ header{
     .textitos{
         display: none;
     }
+
+    .parrafo{
+        text-align: center;
+    }
     
+    .red1, .red2, .red3{
+        margin-left: 0;
+    }
+
 }
 
 
